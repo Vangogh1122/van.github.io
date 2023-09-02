@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>信2005-2-lyf</title>
+    
+<style type="text/css">
+	* {
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: palegreen;
+}
+h1 {
+    color: black; 
+    text-align: center;
+}
+.about_bgc {
+    width: 100%
+}
+
+.about_tit {
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+    font-weight: 550;
+    bottom: 0;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.ribbon {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 300px;
+    top: 50px;
+    margin: auto;
+}
+
+.ribbon:after,
+.ribbon:before {
+    margin-top: 0.5em;
+    content: "";
+    display: flex;
+    ;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link,
+.ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: lightpink;
+    margin-top: 0;
+}
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #9B8651;
+    border-bottom: 0.5em solid #fff;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.me_tit {
+    width: 600px;
+    line-height: 36px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.me_img {
+    width: 800px;
+    height: 600px;
+}
+
+.animate {
+    padding-left: 20px;
+    width: 500px;
+    font-size: 16px;
+    color: #000;
+    animation: 10s wordsLoop linear infinite normal;
+}
+
+@keyframes wordsLoop {
+    0% {
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+.videos {
+    display: flex;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.videos span {
+    width: 400px;
+    margin-right: 100px;
+    margin-left: 300px;
+    color: black;
+}
+.a {text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 50px;n
+}
+
+</style>
+</head>
+<body>
+    <div class="about">
+        <h3 class="about_tit">To&nbsp;Be&nbsp;A&nbsp;Better&nbsp;Man&nbsp;</h3>
+        <img src="./dt.gif" height="550px width=1650px">
+        <div class='ribbon'>
+            <a href='./index.html'><span>Home</span></a>
+            <a href='./about.html'><span>About</span></a>
+            <a href='./form.html'><span>Me</span></a>
+            <a href='https://www.cnblogs.com/abc3701/'><span>Blog</span></a>
+        </div>
+        
+        <div class="me">
+            <img class="me_img" src="./hd.jpg" alt="">
+            <span class="me_tit animate ">
+                编程习惯总结：
+                要注重团队合作，比如在团队中要多沟通，勤商量，做一名好的聆听者，只有这样团队才会提高开发效率，避免由于信息沟通不畅导致一些从复的工作，无效的工作，良好的沟通也可以提高队员之间的默契是成为优秀的开发团队不可缺少的。
+                要养成良好的开发习惯，对于自己这个新手来说养成良好的开发习惯是非重要的,可以避免走很多弯路，做到该如何按照进度去工作，怎样合理的估算。
+                要掌握编码技巧，良好技术是实效编程的前提，怎样写出优质的代码更是每个程序员所追求的，虽然没有最完美的程序，但是我们可以去优化，去重构，在日常编程中更多的去了解自己写的程序，如运行效率，是否易于测试，在改进中不断成长。
+                原则是DRY(Don‘t Repeat Yourself)原则，这也是每个优秀的开发人员必须要遵循的规范，编码过程中任何地方都不要重复，因为重复暂时节省的时间将会给以后的维护使用带来巨大的麻烦，如果发现代码有重复或者违反正交性等原则的地方要立刻找机会重构。这样才能够拥有更快、更好、更强健、更优雅的代码。
+                持续不断地观察周围发生的事情，而不仅仅是自己在做的事，尤其是项目的管理者必须要实时的掌控项目的方向，因为大多数项目失去控制都不是一下子就发生的，而是慢慢地，不可改变的完全失去控制的。可能是系统一个特性一个特性的偏离了规范，项目进度一点一点的拖延。这种情况下如果是作为个人还是管理者都不应该容忍规范的违背，每天、每周都需要审视自己，审视团队，及时纠正问题，纠正团队的方向。
+
+            </span>
+        </div>
+        
+    </div>
+</body>
+
+
+</html>
